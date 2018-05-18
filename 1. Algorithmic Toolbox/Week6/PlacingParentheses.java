@@ -8,9 +8,9 @@ public class PlacingParentheses {
 		char[] op = new char[exp.length() / 2];
 		int[] digit = new int[exp.length() / 2 + 1];
 		int dig = 0, operator = 0;
-	    for (int i = 0; i < exp.length(); i++)
+		for (int i = 0; i < exp.length(); i++)
 			if (i % 2 == 0) digit[dig++] = exp.charAt(i) - '0';
-			else			op[operator++] = exp.charAt(i);
+			else		op[operator++] = exp.charAt(i);
 	
 		int n = digit.length;
 		long[][] m = new long[n][n];
